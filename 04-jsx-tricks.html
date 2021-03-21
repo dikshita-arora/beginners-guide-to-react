@@ -1,3 +1,4 @@
+<!-- Curly Braces { } can be used to manipulate any expression -->
 <body>
   <div id="root"></div>
   <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
@@ -8,7 +9,8 @@
     const children = 'Hello World'
     const className = 'container'
     const props = {children, className}
-    const element = <div {...props} />
+    // All props being provided here will get combined together into a single object
+    const element = <div id="app-root" {...props} /> 
     ReactDOM.render(element, rootElement)
   </script>
 </body>

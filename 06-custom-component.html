@@ -1,3 +1,6 @@
+<!-- Every tag starting with a capital letter like <Message> implicitly works like a React.createElement command
+     Every React component must start with a capital letter, otherwise it will be treated like a regular tag
+     For example - "div", "span", etc. -->
 <body>
   <div id="root"></div>
   <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
@@ -14,7 +17,7 @@
         <Message>Goodbye World</Message>
       </div>
     )
-
+    // <Message>Hello World</Message> is the same as <Message msg={Hello World} />
     ReactDOM.render(element, document.getElementById('root'))
   </script>
 </body>
